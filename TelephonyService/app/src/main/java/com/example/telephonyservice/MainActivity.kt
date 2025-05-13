@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
 
+        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_PHpONE_STATE), REQUEST_CALL_PERMISSION))
+
         button.setOnClickListener {
             // Request permission when button is clicked
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
